@@ -7,11 +7,11 @@ const Section2 = () => {
       <CourseComplete />
       Lessons
       <div className="flex flex-col item gap-2">
-        <LessonStatusCard title={"Lesson 1: Introduction"} status={"91% Passed"}/>
-        <LessonStatusCard title={"Lesson 2: Teams"} status={"91% Passed"}/>
-        <LessonStatusCard title={"Lesson 3: Beskar Management"} status={"92% Passed"}/>
-        <LessonStatusCard title={"Lesson 4: This is the way"} status={"94% Passed"}/>
-        <LessonStatusCard title={"Lesson 5: Mandalorians and the Community"} status={"91% Passed"}/>
+        <LessonStatusCard title={"Lesson 1: Introduction"} rate={"91% Passed"}/>
+        <LessonStatusCard title={"Lesson 2: Teams"} rate={"91% Passed"}/>
+        <LessonStatusCard title={"Lesson 3: Beskar Management"} rate={"92% Passed"}/>
+        <LessonStatusCard title={"Lesson 4: This is the way"} rate={"94% Passed"}/>
+        <LessonStatusCard title={"Lesson 5: Mandalorians and the Community"} rate={"91% Passed"}/>
       </div>
     </div>
   );

@@ -7,10 +7,10 @@ import CourseImg from "../../public/images/placeholder2.png"
 
 const Section1 = () => {
   return (
-    <div className="flex flex-col md:flex-row gap-10">
+    <div className="flex flex-col lg:flex-row gap-10">
       <div className="flex flex-col gap-2">
         <div>
-        <Image src={CourseImg} width={270} height={150}  alt="Course Picture" />
+        <Image src={CourseImg} width={270} height={150} className="w-full" alt="Course Picture" />
         </div>
         <h3 className="uppercase font-bold text-[#132034] text-2xl">
           Economics of Leadership

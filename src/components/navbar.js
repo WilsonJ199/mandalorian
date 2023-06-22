@@ -1,78 +1,160 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo from "../../public/images/logo.svg";
+import { FaAngleDown, FaAngleUp } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [dropdown, setDropdown] = useState("");
+  const handleDrop = () => {
+    setDropdown(!dropdown);
+  };
+
   return (
-    <header className="bg-[#132034] sticky z-30 top-0">
-      <nav className="xl:container xl:mx-auto flex flex-col items-center sm:flex-row sm:justify-between text-center py-3">
-        <Link legacyBehavior href={"/"}>
-          <a>
-            <Image src={logo} width={250} height={150} alt="The Mandalorian Logo" />
-          </a>
-        </Link>
-        <div className="flex space-x-16">
-          <div>
+    <header className=" sticky top-0 bg-[#132034]" onClick={handleDrop}>
+      <nav className="flex flex-col items-center relative z-30 text-center py-1 md:py-3 md:flex-row md:justify-between xl:container xl:mx-auto bg-[#132034]">
+        <Image src={logo} width={250} height={150} alt="The Mandalorian Logo" />
+
+        <ul className="hidden md:flex space-x-16">
+          <li>
             <p className="uppercase text-white">
               <span className="text-[#c5a974]">Welcome back,</span> Din Djarin
             </p>
-          </div>
-          <div>
+          </li>
+          <li>
             <Link legacyBehavior href={"/"}>
               <a className="uppercase text-sm text-white hover:font-bold">
                 Home
               </a>
             </Link>
-          </div>
-          <div>
-            <Link legacyBehavior href={""}>
+          </li>
+          <li>
+            <Link legacyBehavior href={"/learnings"}>
               <a className="uppercase text-sm hover:font-bold text-white">
                 My Learnings
               </a>
             </Link>
-          </div>
-          <div>
+          </li>
+          <li>
             <Link legacyBehavior href={""}>
               <a className="uppercase text-sm hover:font-bold text-white">
                 Log out
               </a>
             </Link>
-          </div>
+          </li>
+        </ul>
+        <div
+          className="md:hidden flex justify-center bg-[#132034]"
+          onClick={handleDrop}
+        >
+          {dropdown ? (
+            <FaAngleUp color="#c5a974" />
+          ) : (
+            <FaAngleDown color="#c5a974" />
+          )}
         </div>
       </nav>
+      <div
+        className={
+          dropdown
+            ? `md:hidden absolute inset-0 flex justify-center items-center w-full h-screen bg-[#132034] ease-in duration-300 z-0`
+            : `md:hidden absolute top-[-150%] left-0 right-0 bottom-0 flex justify-center items-center w-screen h-full bg-[#132034] ease-in duration-300 z-0`
+        }
+      >
+        <ul className="text-[#c5a974] font-bold text-2xl">
+          <li className="p-3">
+            <Link href={"/"}>Home</Link>
+          </li>
+          <li className="p-3">
+            <Link href={"/learnings"}>My Learnings</Link>
+          </li>
+          <li className="p-3">
+            <Link href={""} onClick={handleDrop}>
+              Log out
+            </Link>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 };
 
 export default Navbar;
 
-// <header>
-// <nav className={`nav`}>
-//   <Link href={"/"}>
-//     <a>
-//       <h1 className="logo">CodeWithMarish</h1>
-//     </a>
-//   </Link>
-//   <div
-//     onClick={() => setNavActive(!navActive)}
-//     className={`nav__menu-bar`}
-//   >
-//     <div></div>
-//     <div></div>
-//     <div></div>
-//   </div>
-//   <div className={`${navActive ? "active" : ""} nav__menu-list`}>
-//     {MENU_LIST.map((menu, idx) => (
-//       <div
-//         onClick={() => {
-//           setActiveIdx(idx);
-//           setNavActive(false);
-//         }}
-//         key={menu.text}
-//       >
-//         <NavItem active={activeIdx === idx} {...menu} />
-//       </div>
-//     ))}
-//   </div>
-// </nav>
-// </header>
+{
+  /* <header className="sticky top-0 bg-[#132034]">
+<nav className="flex flex-col items-center lg:container lg:mx-auto text-center py-3 z-10">
+  <div className="flex z-10 bg-[#132034]">
+    <Link legacyBehavior href={"/"}>
+      <a>
+        <Image
+          src={logo}
+          width={250}
+          height={150}
+          alt="The Mandalorian Logo"
+        />
+      </a>
+    </Link>
+    <div className="hidden sm:flex space-x-16">
+      <div className="hidden md:block">
+        <p className="uppercase text-white">
+          <span className="text-[#c5a974]">Welcome back,</span> Din Djarin
+        </p>
+      </div>
+      <div>
+        <Link legacyBehavior href={"/"}>
+          <a className="uppercase text-sm text-white hover:font-bold">
+            Home
+          </a>
+        </Link>
+      </div>
+      <div>
+        <Link legacyBehavior href={""}>
+          <a className="uppercase text-sm hover:font-bold text-white">
+            My Learnings
+          </a>
+        </Link>
+      </div>
+      <div>
+        <Link legacyBehavior href={""}>
+          <a className="uppercase text-sm hover:font-bold text-white">
+            Log out
+          </a>
+        </Link>
+      </div>
+    </div>
+  </div>
+</nav>
+<div className="sm:hidden flex justify-center">
+  <div
+    className="bg-[#132034] px-1 pb-1 rounded-b-lg z-10"
+    onClick={handleDrop}
+  >
+    <FaAngleDown color="#c5a974" />
+  </div>
+</div>
+
+<div
+  className={
+    dropdown
+      ? `sm:hidden absolute inset-0 flex justify-center items-center w-full h-screen bg-[#132034] ease-in duration-300`
+      : `sm:hidden absolute top-[-100%] left-0 right-0 bottom-0 flex justify-center items-center w-screen h-full bg-[#132034] ease-in duration-300`
+  }
+>
+  <ul className="text-white">
+    <li>
+      <Link href={"/"}>Home</Link>
+    </li>
+    <li>
+      <Link href={""}>My Learnings</Link>
+    </li>
+    <li>
+      <Link href={""} onClick={handleDrop}>
+        Log out
+      </Link>
+    </li>
+  </ul>
+</div>
+</header> */
+}

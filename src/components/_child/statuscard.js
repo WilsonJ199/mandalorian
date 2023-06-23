@@ -1,11 +1,11 @@
 import { BsCircleFill } from "react-icons/bs";
 
-const LessonStatusCard = ({ title, rate }) => {
+const LessonStatusCard = ({ title, rate, status }) => {
   return (
     <div className="border border-[#29456e] grid lg:grid-cols-2  justify-center lg:justify-between p-5 text-[#132034]">
       <div className="mb-5 md:mb-0">
         <div className="flex items-center gap-2 mb-3 font-bold">
-          {title} <BsCircleFill color="#2edb34" />
+          {title} {status === "complete" ? <BsCircleFill color="#2edb34" /> : <BsCircleFill color="#f10606" />}
         </div>
         <div className="flex">Completion: {rate} 12/21/2020</div>
       </div>

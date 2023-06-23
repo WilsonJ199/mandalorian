@@ -31,14 +31,14 @@ const Navbar = () => {
           </li>
           <li>
             <Link legacyBehavior href={"/learnings"}>
-              <a className="uppercase text-sm hover:font-bold text-white">
+              <a className="uppercase text-sm text-white">
                 My Learnings
               </a>
             </Link>
           </li>
           <li>
             <Link legacyBehavior href={""}>
-              <a className="uppercase text-sm hover:font-bold text-white">
+              <a className="uppercase text-sm text-white">
                 Log out
               </a>
             </Link>

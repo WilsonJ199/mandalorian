@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.background-img {
+  background-image: url('https://wallpaperaccess.com/full/321660.jpg');
+}
 /* 
 :root {
   --foreground-rgb: 0, 0, 0;

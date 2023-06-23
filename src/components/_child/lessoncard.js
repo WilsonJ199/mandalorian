@@ -1,27 +1,18 @@
-import Image from "next/image";
-import Link from "next/link";
-import Placeholder from "../../../public/images/lessonplaceholder.png";
+import { BsCircleFill } from "react-icons/bs";
 
-const LessonCard = ({ title }) => {
+const LessonCard = ({ title, rate, status }) => {
   return (
-    // <div className=" w-full md:max-w-[100%]">
-    <div className="cursor-pointer">
-      <div>
-        <Image
-          src={Placeholder}
-          width={370}
-          height={176}
-          alt="Course Image"
-          className="w-full"
-        />
+    <div className="border border-[#29456e] grid lg:grid-cols-2  justify-center lg:justify-between p-5 text-[#132034]">
+      <div className="mb-5 md:mb-0">
+        <div className="flex items-center gap-2 mb-3 font-bold">
+          {title} {status === "complete" ? <BsCircleFill color="#2edb34" /> : <BsCircleFill color="#f10606" />}
+        </div>
+        <div className="flex">Completion: {rate} 12/21/2020</div>
       </div>
-      <div className="bg-[#132034] px-2 py-1 flex flex-col gap-5">
-        <div className="font-bold text-white flex justify-start text-xl ml-3">
-          {title}
-        </div>
-        <div className="text-[#c2a672] text-sm flex justify-end mb-1">
-          <Link href={""}>View Course</Link>
-        </div>
+      <div className="flex justify-center lg:justify-end items-center">
+        <button className="border border-[#132034] hover:border-[#c5a974] hover:bg-[#132034] hover:text-white font-bold px-20 py-1">
+          View Lesson
+        </button>
       </div>
     </div>
   );

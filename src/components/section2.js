@@ -1,7 +1,7 @@
 import CourseComplete from "./_child/coursecomplete";
-import StatusCard from "./_child/statuscard";
+import LessonCard from "./_child/lessoncard";
 
-const Section2 = ({lesson}) => {
+const Section2 = ({lesson, course}) => {
   
   return (
     <div>
@@ -9,7 +9,7 @@ const Section2 = ({lesson}) => {
       Lessons
       <div className="flex flex-col item gap-2">
         {lesson?.map((l, index) => (
-          <StatusCard title={l.title} rate={l.rate} status={l.status} key={index} />
+          <LessonCard title={l.title} rate={l.rate} status={l.status} key={index} />
         ))}
       </div>
     </div>

@@ -1,14 +1,48 @@
 import LessonCard from "./_child/lessoncard";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const Section3 = () => {
   return (
-    // <div className="flex flex-col items-center lg:flex-row text-center gap-[15px] lg:mb-5">
-     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
-      <LessonCard title={"Force Training Essentials"} />
-      <LessonCard title={"Bounty Hunter Planning"} />
-      <LessonCard title={"Effective Management"} />
-      <LessonCard title={"Mandalore Goals"} />
-    </div>
+    <section className="mb-5">
+      <Swiper
+        modules={[Navigation]}
+        navigation={true}
+        loop
+        breakpoints={{
+          640: { slidesPerView: 2, spaceBetween: 5 },
+          768: { slidesPerView: 3, spaceBetween5: 5 },
+          1024: { slidesPerView: 4, spaceBetween: 5},
+        }}
+      >
+        <SwiperSlide>
+          {<LessonCard title={"Force Training Essentials"} />}
+        </SwiperSlide>
+        <SwiperSlide>
+          <LessonCard title={"Bounty Hunter Planning"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <LessonCard title={"Effective Management"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <LessonCard title={"Mandalore Goals"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          {<LessonCard title={"Placeholder title 1"} />}
+        </SwiperSlide>
+        <SwiperSlide>
+          <LessonCard title={"Placeholder title 2"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <LessonCard title={"Placeholder title 3"} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <LessonCard title={"Placeholder title 4"} />
+        </SwiperSlide>
+      </Swiper>
+    </section>
   );
 };
 

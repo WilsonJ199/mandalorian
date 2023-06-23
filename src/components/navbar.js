@@ -24,7 +24,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link legacyBehavior href={"/"}>
-              <a className="uppercase text-sm text-white hover:font-bold">
+              <a className="uppercase text-sm text-white">
                 Home
               </a>
             </Link>
@@ -81,80 +81,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-  /* <header className="sticky top-0 bg-[#132034]">
-<nav className="flex flex-col items-center lg:container lg:mx-auto text-center py-3 z-10">
-  <div className="flex z-10 bg-[#132034]">
-    <Link legacyBehavior href={"/"}>
-      <a>
-        <Image
-          src={logo}
-          width={250}
-          height={150}
-          alt="The Mandalorian Logo"
-        />
-      </a>
-    </Link>
-    <div className="hidden sm:flex space-x-16">
-      <div className="hidden md:block">
-        <p className="uppercase text-white">
-          <span className="text-[#c5a974]">Welcome back,</span> Din Djarin
-        </p>
-      </div>
-      <div>
-        <Link legacyBehavior href={"/"}>
-          <a className="uppercase text-sm text-white hover:font-bold">
-            Home
-          </a>
-        </Link>
-      </div>
-      <div>
-        <Link legacyBehavior href={""}>
-          <a className="uppercase text-sm hover:font-bold text-white">
-            My Learnings
-          </a>
-        </Link>
-      </div>
-      <div>
-        <Link legacyBehavior href={""}>
-          <a className="uppercase text-sm hover:font-bold text-white">
-            Log out
-          </a>
-        </Link>
-      </div>
-    </div>
-  </div>
-</nav>
-<div className="sm:hidden flex justify-center">
-  <div
-    className="bg-[#132034] px-1 pb-1 rounded-b-lg z-10"
-    onClick={handleDrop}
-  >
-    <FaAngleDown color="#c5a974" />
-  </div>
-</div>
-
-<div
-  className={
-    dropdown
-      ? `sm:hidden absolute inset-0 flex justify-center items-center w-full h-screen bg-[#132034] ease-in duration-300`
-      : `sm:hidden absolute top-[-100%] left-0 right-0 bottom-0 flex justify-center items-center w-screen h-full bg-[#132034] ease-in duration-300`
-  }
->
-  <ul className="text-white">
-    <li>
-      <Link href={"/"}>Home</Link>
-    </li>
-    <li>
-      <Link href={""}>My Learnings</Link>
-    </li>
-    <li>
-      <Link href={""} onClick={handleDrop}>
-        Log out
-      </Link>
-    </li>
-  </ul>
-</div>
-</header> */
-}

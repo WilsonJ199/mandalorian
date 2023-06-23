@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <Layout>
       <div className="container mx-auto">
-        <SectionDivider header="View Courses" value2="Back to Courses" />
+        <SectionDivider header="View Course" value2="Back to Courses" />
         <div className="grid md:grid-cols-2 gap-3">
           <Section1 course={CourseData} />
-          <Section2 lesson={LessonData} course={CourseData} />
+          <Section2 lesson={LessonData} courses={CourseData} />
         </div>
         <SectionDivider header="Available Courses" value2="View All Courses" />
         <Section3 course={CourseData} />

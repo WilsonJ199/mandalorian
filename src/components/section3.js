@@ -6,6 +6,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const Section3 = ({course}) => {
+
+
   return (
     <section className="mb-5">
       <Swiper

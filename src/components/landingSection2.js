@@ -4,8 +4,7 @@ import Placeholder2 from "../../public/images/580x400.png";
 
 const LandingSection2 = () => {
   return (
-    <div className="grid md:grid-cols-2">
-      {/* <div className="flex md:justify-end md:order-2"> */}
+    <div className="grid md:grid-cols-2 px-5 md:px-0">
       <div className="mb-5 justify-center items-center flex md:order-2">
         <Image src={Placeholder2} width={580} height={400} alt="About us image 2"/>
       </div>

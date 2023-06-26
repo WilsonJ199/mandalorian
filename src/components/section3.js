@@ -9,7 +9,7 @@ const Section3 = ({course}) => {
 
 
   return (
-    <section className="mb-5">
+    <section className="mb-5 p-5 sm:p-0">
       <Swiper
         modules={[Navigation]}
         navigation={true}

@@ -1,6 +1,6 @@
 const CourseComplete = () => {
   return (
-    <div className="border border-[#c2a672] text-center text-[#132034] p-[40px] mb-4">
+    <div className="border border-[#c2a672] text-center text-[#132034] p-[40px] mb-4 shadow-lg">
       <p className="lg:px-36">
         You have completed{" "}
         <span className="font-bold">Mandalorian Basics: Lesson 3</span> with an

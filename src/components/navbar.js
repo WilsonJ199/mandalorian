@@ -23,14 +23,14 @@ const Navbar = () => {
             </p>
           </li>
           <li>
-            <Link legacyBehavior href={"/"}>
+            <Link legacyBehavior href={"/landing"}>
               <a className="uppercase text-sm text-white">
                 Home
               </a>
             </Link>
           </li>
           <li>
-            <Link legacyBehavior href={"/learnings"}>
+            <Link legacyBehavior href={"/"}>
               <a className="uppercase text-sm text-white">
                 My Learnings
               </a>

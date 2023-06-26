@@ -8,7 +8,7 @@ import CourseImg from "../../public/images/placeholder2.png"
 
 const Section1 = ({ course }) => {
   return (
-    <div className="flex flex-col lg:flex-row gap-10">
+    <div className="flex flex-col lg:flex-row gap-10 p-5 sm:p-0">
       <div className="flex flex-col gap-2 text-[#132034]">
         <div>
         <Image src={CourseImg} width={270} height={150} className="w-full" alt="Course Picture" />

@@ -4,7 +4,6 @@ import Placeholder from "../../../public/images/lessonplaceholder.png";
 
 const CourseCard = ({ title }) => {
   return (
-    // <div className=" w-full md:max-w-[100%]">
     <div className="cursor-pointer">
       <div>
         <Image

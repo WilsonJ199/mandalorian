@@ -13,9 +13,9 @@ export default function Home() {
         <SectionDivider header="View Course" value2="Back to Courses" />
         <div className="grid md:grid-cols-2 gap-3">
           <Section1 course={CourseData} />
-          <Section2 lesson={LessonData} courses={CourseData} />
+          <Section2 lesson={LessonData} link={""} courses={CourseData} />
         </div>
-        <SectionDivider header="Available Courses" value2="View All Courses" />
+        <SectionDivider header="Available Courses" link={""} value2="View All Courses" />
         <Section3 course={CourseData} />
       </div>
     </Layout>

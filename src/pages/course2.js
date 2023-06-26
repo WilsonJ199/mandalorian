@@ -6,13 +6,13 @@ import Layout from "@/components/layout";
 import { CourseData } from "../components/Data/courseData";
 import { LessonData } from "@/components/Data/lessonData";
 
-export default function Home() {
+export default function ForceTrainingEssentials() {
   return (
     <Layout>
       <div className="container mx-auto">
         <SectionDivider header="View Course" link={""} value2="Back to Courses" />
         <div className="grid md:grid-cols-2 gap-3">
-          <Section1 courses={CourseData} />
+          <Section1 course={CourseData} />
           <Section2 lesson={LessonData} courses={CourseData} />
         </div>
         <SectionDivider header="Available Courses" link={""} value2="View All Courses" />

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Placeholder from "../../../public/images/lessonplaceholder.png";
 
-const CourseCard = ({ title }) => {
+const SliderCourseCard = ({ title }) => {
   return (
     <div className="cursor-pointer">
       <div>
@@ -26,4 +26,4 @@ const CourseCard = ({ title }) => {
   );
 };
 
-export default CourseCard;
+export default SliderCourseCard;

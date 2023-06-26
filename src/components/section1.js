@@ -6,7 +6,7 @@ import { BsCircleFill } from "react-icons/bs";
 import CourseImg from "../../public/images/placeholder2.png"
 
 
-const Section1 = ({ course }) => {
+const Section1 = ({ courses }) => {
   return (
     <div className="flex flex-col lg:flex-row gap-10 p-5 sm:p-0">
       <div className="flex flex-col gap-2 text-[#132034]">

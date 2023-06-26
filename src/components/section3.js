@@ -1,11 +1,11 @@
-import CourseCard from "./_child/coursecard";
+import SliderCourseCard from "./_child/slidercoursecard";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const Section3 = ({course}) => {
+const Section3 = ({course }) => {
 
 
   return (
@@ -21,7 +21,7 @@ const Section3 = ({course}) => {
       >
         {course?.map((c, index) => (
           <SwiperSlide key={index}>
-            <CourseCard title={c.title}/>
+            <SliderCourseCard title={c.title}/>
           </SwiperSlide>
         ))}
       </Swiper>

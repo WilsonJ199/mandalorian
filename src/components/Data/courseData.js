@@ -7,7 +7,7 @@ export const CourseData = [
     objective:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est",
     image: "https://via.placeholder.com/370x176",
-    duration:"2h 00m",
+    duration: "2h 00m",
     status: "incomplete",
     lessons: [
       {
@@ -75,7 +75,7 @@ export const CourseData = [
     objective:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est",
     image: "https://via.placeholder.com/370x176",
-    duration:"2h 00m",
+    duration: "2h 00m",
     status: "incomplete",
     lessons: [
       {
@@ -143,7 +143,7 @@ export const CourseData = [
     objective:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est",
     image: "https://via.placeholder.com/370x176",
-    duration:"2h 00m",
+    duration: "2h 00m",
     status: "incomplete",
     lessons: [
       {
@@ -211,7 +211,7 @@ export const CourseData = [
     objective:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est",
     image: "https://via.placeholder.com/370x176",
-    duration:"2h 00m",
+    duration: "2h 00m",
     status: "incomplete",
     lessons: [
       {
@@ -279,8 +279,9 @@ export const CourseData = [
     objective:
       "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est",
     image: "https://via.placeholder.com/370x176",
-    duration:"2h 00m",
-    status: "complete",
+    duration: "2h 00m",
+    status: "Completed",
+    completion_date: "12/01/2021",
     lessons: [
       {
         id: 1,
@@ -290,7 +291,7 @@ export const CourseData = [
         objective:
           "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est",
         rate: "91% Passed",
-        status: "complete",
+        status: "Completed",
         image: "",
       },
       {
@@ -301,7 +302,7 @@ export const CourseData = [
         objective:
           "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est",
         rate: "91% Passed",
-        status: "complete",
+        status: "Completed",
         image: "",
       },
       {
@@ -312,7 +313,7 @@ export const CourseData = [
         objective:
           "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est",
         rate: "92% Passed",
-        status: "complete",
+        status: "Completed",
         image: "",
       },
       {
@@ -323,7 +324,7 @@ export const CourseData = [
         objective:
           "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est",
         rate: "94% Passed",
-        status: "complete",
+        status: "Completed",
         image: "",
       },
       {
@@ -334,7 +335,7 @@ export const CourseData = [
         objective:
           "Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est",
         rate: "91% Passed",
-        status: "complete",
+        status: "Completed",
         image: "",
       },
     ],

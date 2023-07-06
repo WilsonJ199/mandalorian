@@ -5,7 +5,7 @@ const LessonCard = ({ item }) => {
     <div className="border border-[#29456e] grid lg:grid-cols-2  justify-center lg:justify-between p-5 text-[#132034] mb-3 shadow-lg">
       <div className="mb-5 md:mb-0">
         <div className="flex items-center gap-2 mb-0 sm:mb-3 font-bold">
-          {item.title} {item.status === "complete" ? <BsCircleFill color="#2edb34" /> : <BsCircleFill color="#f10606" />}
+          {item.title} {item.status === "Completed" ? <BsCircleFill color="#2edb34" /> : <BsCircleFill color="#f10606" />}
         </div>
         <div className="flex">Completion: {item.rate} 12/21/2020</div>
       </div>
